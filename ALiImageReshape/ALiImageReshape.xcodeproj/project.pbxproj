@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EBE110721DC4537C00000D5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE110711DC4537C00000D5B /* main.m */; };
+		EBE110751DC4537C00000D5B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE110741DC4537C00000D5B /* AppDelegate.m */; };
+		EBE110781DC4537C00000D5B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE110771DC4537C00000D5B /* ViewController.m */; };
+		EBE1107B1DC4537C00000D5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE110791DC4537C00000D5B /* Main.storyboard */; };
+		EBE1107D1DC4537C00000D5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBE1107C1DC4537C00000D5B /* Assets.xcassets */; };
+		EBE110801DC4537C00000D5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE1107E1DC4537C00000D5B /* LaunchScreen.storyboard */; };
+		EBE1108B1DC4537C00000D5B /* ALiImageReshapeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1108A1DC4537C00000D5B /* ALiImageReshapeTests.m */; };
+		EBE110961DC4537C00000D5B /* ALiImageReshapeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE110951DC4537C00000D5B /* ALiImageReshapeUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBE110871DC4537C00000D5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBE110651DC4537C00000D5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBE1106C1DC4537C00000D5B;
+			remoteInfo = ALiImageReshape;
+		};
+		EBE110921DC4537C00000D5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBE110651DC4537C00000D5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBE1106C1DC4537C00000D5B;
+			remoteInfo = ALiImageReshape;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EBE1106D1DC4537C00000D5B /* ALiImageReshape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ALiImageReshape.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBE110711DC4537C00000D5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EBE110731DC4537C00000D5B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EBE110741DC4537C00000D5B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EBE110761DC4537C00000D5B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EBE110771DC4537C00000D5B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EBE1107A1DC4537C00000D5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EBE1107C1DC4537C00000D5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBE1107F1DC4537C00000D5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EBE110811DC4537C00000D5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBE110861DC4537C00000D5B /* ALiImageReshapeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ALiImageReshapeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBE1108A1DC4537C00000D5B /* ALiImageReshapeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALiImageReshapeTests.m; sourceTree = "<group>"; };
+		EBE1108C1DC4537C00000D5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBE110911DC4537C00000D5B /* ALiImageReshapeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ALiImageReshapeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBE110951DC4537C00000D5B /* ALiImageReshapeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALiImageReshapeUITests.m; sourceTree = "<group>"; };
+		EBE110971DC4537C00000D5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBE1106A1DC4537C00000D5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE110831DC4537C00000D5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE1108E1DC4537C00000D5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EBE110641DC4537C00000D5B = {
+			isa = PBXGroup;
+			children = (
+				EBE1106F1DC4537C00000D5B /* ALiImageReshape */,
+				EBE110891DC4537C00000D5B /* ALiImageReshapeTests */,
+				EBE110941DC4537C00000D5B /* ALiImageReshapeUITests */,
+				EBE1106E1DC4537C00000D5B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EBE1106E1DC4537C00000D5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBE1106D1DC4537C00000D5B /* ALiImageReshape.app */,
+				EBE110861DC4537C00000D5B /* ALiImageReshapeTests.xctest */,
+				EBE110911DC4537C00000D5B /* ALiImageReshapeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBE1106F1DC4537C00000D5B /* ALiImageReshape */ = {
+			isa = PBXGroup;
+			children = (
+				EBE110731DC4537C00000D5B /* AppDelegate.h */,
+				EBE110741DC4537C00000D5B /* AppDelegate.m */,
+				EBE110761DC4537C00000D5B /* ViewController.h */,
+				EBE110771DC4537C00000D5B /* ViewController.m */,
+				EBE110791DC4537C00000D5B /* Main.storyboard */,
+				EBE1107C1DC4537C00000D5B /* Assets.xcassets */,
+				EBE1107E1DC4537C00000D5B /* LaunchScreen.storyboard */,
+				EBE110811DC4537C00000D5B /* Info.plist */,
+				EBE110701DC4537C00000D5B /* Supporting Files */,
+			);
+			path = ALiImageReshape;
+			sourceTree = "<group>";
+		};
+		EBE110701DC4537C00000D5B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EBE110711DC4537C00000D5B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EBE110891DC4537C00000D5B /* ALiImageReshapeTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBE1108A1DC4537C00000D5B /* ALiImageReshapeTests.m */,
+				EBE1108C1DC4537C00000D5B /* Info.plist */,
+			);
+			path = ALiImageReshapeTests;
+			sourceTree = "<group>";
+		};
+		EBE110941DC4537C00000D5B /* ALiImageReshapeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EBE110951DC4537C00000D5B /* ALiImageReshapeUITests.m */,
+				EBE110971DC4537C00000D5B /* Info.plist */,
+			);
+			path = ALiImageReshapeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBE1106C1DC4537C00000D5B /* ALiImageReshape */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBE1109A1DC4537C00000D5B /* Build configuration list for PBXNativeTarget "ALiImageReshape" */;
+			buildPhases = (
+				EBE110691DC4537C00000D5B /* Sources */,
+				EBE1106A1DC4537C00000D5B /* Frameworks */,
+				EBE1106B1DC4537C00000D5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ALiImageReshape;
+			productName = ALiImageReshape;
+			productReference = EBE1106D1DC4537C00000D5B /* ALiImageReshape.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBE110851DC4537C00000D5B /* ALiImageReshapeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBE1109D1DC4537C00000D5B /* Build configuration list for PBXNativeTarget "ALiImageReshapeTests" */;
+			buildPhases = (
+				EBE110821DC4537C00000D5B /* Sources */,
+				EBE110831DC4537C00000D5B /* Frameworks */,
+				EBE110841DC4537C00000D5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBE110881DC4537C00000D5B /* PBXTargetDependency */,
+			);
+			name = ALiImageReshapeTests;
+			productName = ALiImageReshapeTests;
+			productReference = EBE110861DC4537C00000D5B /* ALiImageReshapeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EBE110901DC4537C00000D5B /* ALiImageReshapeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBE110A01DC4537C00000D5B /* Build configuration list for PBXNativeTarget "ALiImageReshapeUITests" */;
+			buildPhases = (
+				EBE1108D1DC4537C00000D5B /* Sources */,
+				EBE1108E1DC4537C00000D5B /* Frameworks */,
+				EBE1108F1DC4537C00000D5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBE110931DC4537C00000D5B /* PBXTargetDependency */,
+			);
+			name = ALiImageReshapeUITests;
+			productName = ALiImageReshapeUITests;
+			productReference = EBE110911DC4537C00000D5B /* ALiImageReshapeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBE110651DC4537C00000D5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = LeeWong;
+				TargetAttributes = {
+					EBE1106C1DC4537C00000D5B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = XWNPFKK4U5;
+						ProvisioningStyle = Automatic;
+					};
+					EBE110851DC4537C00000D5B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = XWNPFKK4U5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EBE1106C1DC4537C00000D5B;
+					};
+					EBE110901DC4537C00000D5B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = XWNPFKK4U5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EBE1106C1DC4537C00000D5B;
+					};
+				};
+			};
+			buildConfigurationList = EBE110681DC4537C00000D5B /* Build configuration list for PBXProject "ALiImageReshape" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBE110641DC4537C00000D5B;
+			productRefGroup = EBE1106E1DC4537C00000D5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBE1106C1DC4537C00000D5B /* ALiImageReshape */,
+				EBE110851DC4537C00000D5B /* ALiImageReshapeTests */,
+				EBE110901DC4537C00000D5B /* ALiImageReshapeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBE1106B1DC4537C00000D5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE110801DC4537C00000D5B /* LaunchScreen.storyboard in Resources */,
+				EBE1107D1DC4537C00000D5B /* Assets.xcassets in Resources */,
+				EBE1107B1DC4537C00000D5B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE110841DC4537C00000D5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE1108F1DC4537C00000D5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBE110691DC4537C00000D5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE110781DC4537C00000D5B /* ViewController.m in Sources */,
+				EBE110751DC4537C00000D5B /* AppDelegate.m in Sources */,
+				EBE110721DC4537C00000D5B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE110821DC4537C00000D5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE1108B1DC4537C00000D5B /* ALiImageReshapeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE1108D1DC4537C00000D5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE110961DC4537C00000D5B /* ALiImageReshapeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBE110881DC4537C00000D5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBE1106C1DC4537C00000D5B /* ALiImageReshape */;
+			targetProxy = EBE110871DC4537C00000D5B /* PBXContainerItemProxy */;
+		};
+		EBE110931DC4537C00000D5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBE1106C1DC4537C00000D5B /* ALiImageReshape */;
+			targetProxy = EBE110921DC4537C00000D5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EBE110791DC4537C00000D5B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBE1107A1DC4537C00000D5B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EBE1107E1DC4537C00000D5B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBE1107F1DC4537C00000D5B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBE110981DC4537C00000D5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EBE110991DC4537C00000D5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBE1109B1DC4537C00000D5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XWNPFKK4U5;
+				INFOPLIST_FILE = ALiImageReshape/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.msb.ALiImageReshape;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EBE1109C1DC4537C00000D5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XWNPFKK4U5;
+				INFOPLIST_FILE = ALiImageReshape/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.msb.ALiImageReshape;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EBE1109E1DC4537C00000D5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = XWNPFKK4U5;
+				INFOPLIST_FILE = ALiImageReshapeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.msb.ALiImageReshapeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ALiImageReshape.app/ALiImageReshape";
+			};
+			name = Debug;
+		};
+		EBE1109F1DC4537C00000D5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = XWNPFKK4U5;
+				INFOPLIST_FILE = ALiImageReshapeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.msb.ALiImageReshapeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ALiImageReshape.app/ALiImageReshape";
+			};
+			name = Release;
+		};
+		EBE110A11DC4537C00000D5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = XWNPFKK4U5;
+				INFOPLIST_FILE = ALiImageReshapeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.msb.ALiImageReshapeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ALiImageReshape;
+			};
+			name = Debug;
+		};
+		EBE110A21DC4537C00000D5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = XWNPFKK4U5;
+				INFOPLIST_FILE = ALiImageReshapeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.msb.ALiImageReshapeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ALiImageReshape;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBE110681DC4537C00000D5B /* Build configuration list for PBXProject "ALiImageReshape" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBE110981DC4537C00000D5B /* Debug */,
+				EBE110991DC4537C00000D5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBE1109A1DC4537C00000D5B /* Build configuration list for PBXNativeTarget "ALiImageReshape" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBE1109B1DC4537C00000D5B /* Debug */,
+				EBE1109C1DC4537C00000D5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EBE1109D1DC4537C00000D5B /* Build configuration list for PBXNativeTarget "ALiImageReshapeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBE1109E1DC4537C00000D5B /* Debug */,
+				EBE1109F1DC4537C00000D5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EBE110A01DC4537C00000D5B /* Build configuration list for PBXNativeTarget "ALiImageReshapeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBE110A11DC4537C00000D5B /* Debug */,
+				EBE110A21DC4537C00000D5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBE110651DC4537C00000D5B /* Project object */;
+}
