@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "AliImageReshapeController.h"
 
-@interface ViewController () <UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+@interface ViewController () <UIImagePickerControllerDelegate,UINavigationControllerDelegate,ALiImageReshapeDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *chooseImage;
 @end
@@ -26,7 +27,7 @@
     UIImagePickerController *picker = [[UIImagePickerController alloc] init];
     picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     picker.delegate = self;
-    [self.navigationController presentViewController:picker animated:YES completion:nil];
+    [self presentViewController:picker animated:YES completion:nil];
 }
 
 
@@ -43,6 +44,20 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - ALiImageReshapeDelegate
+
+- (void)imageReshaperController:(AliImageReshapeController *)reshaper didFinishPickingMediaWithInfo:(UIImage *)image
+{
+    [self.chooseImage setImage:image];
+    [reshaper dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)imageReshaperControllerDidCancel:(AliImageReshapeController *)reshaper
+{
+    [reshaper dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma mark - UIImagePickerControllerDelegate
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
     [picker dismissViewControllerAnimated:YES completion:nil];
@@ -53,8 +68,17 @@
     if (picker.allowsEditing) {
         UIImage* image = [info objectForKey:@"UIImagePickerControllerEditedImage"];
         [self.chooseImage setImage:image];
+        [picker dismissViewControllerAnimated:YES completion:nil];
+    } else {
+        UIImage* image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
+        [self.chooseImage setImage:image];
+        AliImageReshapeController *vc = [[AliImageReshapeController alloc] init];
+        vc.sourceImage = image;
+        vc.reshapeScale = 16./9.;
+        vc.delegate = self;
+        [picker pushViewController:vc animated:YES];
     }
-    [picker dismissViewControllerAnimated:YES completion:nil];
+
 }
 
 

@@ -15,6 +15,9 @@
 		EBE110801DC4537C00000D5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE1107E1DC4537C00000D5B /* LaunchScreen.storyboard */; };
 		EBE1108B1DC4537C00000D5B /* ALiImageReshapeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE1108A1DC4537C00000D5B /* ALiImageReshapeTests.m */; };
 		EBE110961DC4537C00000D5B /* ALiImageReshapeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE110951DC4537C00000D5B /* ALiImageReshapeUITests.m */; };
+		EBE110B01DC4798B00000D5B /* AliImageReshapeController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE110AF1DC4798B00000D5B /* AliImageReshapeController.m */; };
+		EBE110B31DC4874500000D5B /* ALiImageShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE110B21DC4874500000D5B /* ALiImageShapeView.m */; };
+		EBE110B61DC48C3B00000D5B /* UIImage+ALi.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE110B51DC48C3B00000D5B /* UIImage+ALi.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		EBE110911DC4537C00000D5B /* ALiImageReshapeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ALiImageReshapeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE110951DC4537C00000D5B /* ALiImageReshapeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ALiImageReshapeUITests.m; sourceTree = "<group>"; };
 		EBE110971DC4537C00000D5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBE110AE1DC4798B00000D5B /* AliImageReshapeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliImageReshapeController.h; sourceTree = "<group>"; };
+		EBE110AF1DC4798B00000D5B /* AliImageReshapeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliImageReshapeController.m; sourceTree = "<group>"; };
+		EBE110B11DC4874500000D5B /* ALiImageShapeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALiImageShapeView.h; sourceTree = "<group>"; };
+		EBE110B21DC4874500000D5B /* ALiImageShapeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALiImageShapeView.m; sourceTree = "<group>"; };
+		EBE110B41DC48C3B00000D5B /* UIImage+ALi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ALi.h"; sourceTree = "<group>"; };
+		EBE110B51DC48C3B00000D5B /* UIImage+ALi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ALi.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,7 @@
 		EBE1106F1DC4537C00000D5B /* ALiImageReshape */ = {
 			isa = PBXGroup;
 			children = (
+				EBE110AD1DC4796000000D5B /* ALiImageReshape */,
 				EBE110731DC4537C00000D5B /* AppDelegate.h */,
 				EBE110741DC4537C00000D5B /* AppDelegate.m */,
 				EBE110761DC4537C00000D5B /* ViewController.h */,
@@ -138,6 +148,19 @@
 				EBE110971DC4537C00000D5B /* Info.plist */,
 			);
 			path = ALiImageReshapeUITests;
+			sourceTree = "<group>";
+		};
+		EBE110AD1DC4796000000D5B /* ALiImageReshape */ = {
+			isa = PBXGroup;
+			children = (
+				EBE110AE1DC4798B00000D5B /* AliImageReshapeController.h */,
+				EBE110AF1DC4798B00000D5B /* AliImageReshapeController.m */,
+				EBE110B11DC4874500000D5B /* ALiImageShapeView.h */,
+				EBE110B21DC4874500000D5B /* ALiImageShapeView.m */,
+				EBE110B41DC48C3B00000D5B /* UIImage+ALi.h */,
+				EBE110B51DC48C3B00000D5B /* UIImage+ALi.m */,
+			);
+			path = ALiImageReshape;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,9 +299,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBE110B61DC48C3B00000D5B /* UIImage+ALi.m in Sources */,
 				EBE110781DC4537C00000D5B /* ViewController.m in Sources */,
 				EBE110751DC4537C00000D5B /* AppDelegate.m in Sources */,
+				EBE110B31DC4874500000D5B /* ALiImageShapeView.m in Sources */,
 				EBE110721DC4537C00000D5B /* main.m in Sources */,
+				EBE110B01DC4798B00000D5B /* AliImageReshapeController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +453,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XWNPFKK4U5;
 				INFOPLIST_FILE = ALiImageReshape/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.msb.ALiImageReshape;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -439,6 +466,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XWNPFKK4U5;
 				INFOPLIST_FILE = ALiImageReshape/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.msb.ALiImageReshape;
 				PRODUCT_NAME = "$(TARGET_NAME)";
