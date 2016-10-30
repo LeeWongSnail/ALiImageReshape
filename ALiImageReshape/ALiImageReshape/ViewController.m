@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "AliImageReshapeController.h"
 
-@interface ViewController () <UIImagePickerControllerDelegate,UINavigationControllerDelegate,ALiImageReshapeDelegate>
+@interface ViewController () <UIImagePickerControllerDelegate,UINavigationControllerDelegate,ALiImageReshapeDelegate,UIActionSheetDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *chooseImage;
 @end
@@ -24,13 +24,38 @@
 }
 
 - (IBAction)customMethod:(UIButton *)sender {
+    UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"拍照",@"相册选取", nil];
+    [sheet showInView:self.view];
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 0) {
+        //拍照
+        [self takePhoto];
+    } else if(buttonIndex == 1) {
+        //相册选取
+        [self chooseImage];
+    } else {
+        //取消
+    }
+}
+
+- (void)takePhoto
+{
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+    picker.delegate = self;
+    [self presentViewController:picker animated:YES completion:nil];
+}
+
+- (void)chooseImageFromLibary
+{
     UIImagePickerController *picker = [[UIImagePickerController alloc] init];
     picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     picker.delegate = self;
     [self presentViewController:picker animated:YES completion:nil];
 }
-
-
 
 
 - (void)viewDidLoad {
@@ -56,7 +81,6 @@
 {
     [reshaper dismissViewControllerAnimated:YES completion:nil];
 }
-
 #pragma mark - UIImagePickerControllerDelegate
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
