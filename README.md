@@ -16,6 +16,7 @@
 系统的方法只需要设置allowEditing = YES 即可，但是缺点是只支持正方形的裁剪。
 
 实例图片：
+
 ![从相册选取](https://i.niupic.com/images/2016/10/29/uK4efP.gif)
 
 ![拍照](https://i.niupic.com/images/2016/10/29/fnIgwd.gif)
