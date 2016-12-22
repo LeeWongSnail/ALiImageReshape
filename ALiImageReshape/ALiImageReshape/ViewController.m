@@ -35,7 +35,7 @@
         [self takePhoto];
     } else if(buttonIndex == 1) {
         //相册选取
-        [self chooseImage];
+        [self chooseImageFromLibary];
     } else {
         //取消
     }

@@ -143,6 +143,11 @@
     [super viewDidAppear:animated];
     [self layoutScrollView];
     
+    // 禁用 iOS7 返回手势
+    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+        self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+    }
+    
     self.shapeView.shapePath = [UIBezierPath bezierPathWithRect:self.frameView.frame];
     self.shapeView.coverColor = [UIColor colorWithWhite:0 alpha:0.7];
     [self.shapeView setNeedsDisplay];
@@ -158,6 +163,10 @@
 {
     [super viewWillDisappear:animated];
     [self.navigationController setNavigationBarHidden:NO animated:NO];
+    // 开启
+    if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
+        self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+    }
 }
 
 - (BOOL)prefersStatusBarHidden
